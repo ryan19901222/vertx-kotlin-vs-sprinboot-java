@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "0e9f84f3-b647-4e0c-be77-9b6f7b4e7386",
+		"name": "kotlin-kmongo-coroutines-iv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Send info about a movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/movie/starwars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movie",
+						"starwars"
+					]
+				},
+				"description": "以 url path 方式帶入 movie id 找出movie"
+			},
+			"response": []
+		},
+		{
+			"name": "Get the current rating of a movie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/getRating/starwars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getRating",
+						"starwars"
+					]
+				},
+				"description": "以 url path 方式帶入 movie id 找出在 rate value 的平均值"
+			},
+			"response": []
+		},
+		{
+			"name": "Rate a movie",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/rateMovie/starwars?getRating=50",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rateMovie",
+						"starwars"
+					],
+					"query": [
+						{
+							"key": "getRating",
+							"value": "50"
+						}
+					]
+				},
+				"description": "以 url path 配合 param 方式帶入 movie id 及 rate value 新增 rate"
+			},
+			"response": []
+		}
+	]
+}
