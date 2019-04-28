@@ -1,6 +1,7 @@
 package www.com.springboot_mongo_iv.document;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -8,6 +9,9 @@ import org.springframework.data.mongodb.core.mapping.Field;
 public class Movie {
 
 	@Id
+	private String _id;
+
+	@Indexed
 	private String id;
 
 	@Field("title")

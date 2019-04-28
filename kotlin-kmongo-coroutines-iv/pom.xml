@@ -36,12 +36,22 @@
 		</dependency>
 		<dependency>
 			<groupId>io.vertx</groupId>
+			<artifactId>vertx-mongo-client</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
 			<artifactId>vertx-web-client</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.litote.kmongo</groupId>
 			<artifactId>kmongo-coroutine</artifactId>
+			<version>${kmongo.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.litote.kmongo</groupId>
+			<artifactId>kmongo-shared</artifactId>
 			<version>${kmongo.version}</version>
 		</dependency>
 		<dependency>
